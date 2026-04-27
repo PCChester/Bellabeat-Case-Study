@@ -39,21 +39,16 @@ bellabeat-case-study/
 ├── README.md
 ├── Bellabeat_Case_Study.pdf        ← Full written analysis
 │
-├── scripts/
-│   └── bellabeat_r_analysis.R      ← Full R workflow (cleaning → export)
-│
-├── data/
-│   └── (source: Kaggle FitBit Fitness Tracker Data — see link below)
-│
-└── visuals/
-    └── (Tableau Public links below)
+└── scripts/
+    ├── bellabeat_r_analysis.R      ← Full R workflow (cleaning → export)
+    └── bellabeat_queries.sql       ← Full SQL workflow (cleaning → export)
 ```
 
 ---
 
 ## Data Source
 
-**[FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit/)** — Kaggle (arashnic/fitbit)
+**Source data:** [FitBit Fitness Tracker Data on Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit/) — Kaggle (arashnic/fitbit)
 
 - 30 Fitbit users, ~3 months (March–May 2016)
 - Collected via Amazon Mechanical Turk
@@ -63,6 +58,8 @@ bellabeat-case-study/
 - `dailyActivity_merged.csv`
 - `sleepDay_merged.csv`
 - `heartrate_seconds_merged.csv`
+
+**Access the dataset directly on Kaggle:** [https://www.kaggle.com/datasets/arashnic/fitbit/](https://www.kaggle.com/datasets/arashnic/fitbit/)
 
 **Key limitations:** Small sample (n=30), no demographic data, collected in 2016. Findings indicate broad trends rather than statistically definitive conclusions.
 
@@ -88,6 +85,7 @@ Based on the above, the recommendation pivots the Stress/Recovery feature from a
 
 All visualisations are published on [Tableau Public](https://public.tableau.com/app/profile/chris.chester/vizzes).
 
+- **Tableau Public profile:** [https://public.tableau.com/app/profile/chris.chester/vizzes](https://public.tableau.com/app/profile/chris.chester/vizzes)
 - **Viz 1:** [Better Sleep Doesn't Change Next-Day Activity](https://public.tableau.com/app/profile/chris.chester/viz/BetterSleepDoesntChangeNext-DayActivity/SleepQualityvsNextDayActivity2) — Sleep quality vs. next-day steps comparison
 - **Viz 2:** [High Strain Validation: Users Push Harder When They Should Rest](https://public.tableau.com/views/HighStrainValidationUsersPushHarderWhenTheyShouldRest/HighStrainValidation) — Dual dashboard showing next-day activity and resting heart rate by strain segment
 
