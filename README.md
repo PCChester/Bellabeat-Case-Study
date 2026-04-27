@@ -1,6 +1,4 @@
 [README.md](https://github.com/user-attachments/files/27121805/README.md)
-# Bellabeat-Case-Study
-Google Data Analytics Capstone — Bellabeat case study analysing Fitbit user data to identify smart device trends and deliver data-driven product and marketing recommendations.
 # Bellabeat Case Study
 ### Google Data Analytics Certificate — Capstone Project
 **Author:** Peter Christopher Chester | **Date:** November 2025
