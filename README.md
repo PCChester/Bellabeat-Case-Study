@@ -38,6 +38,9 @@ bellabeat-case-study/
 │
 ├── README.md
 ├── Bellabeat_Case_Study_v.2.pdf    ← Full written analysis
+├── data/
+│   ├── dailyActivity_engineered - dailyActivity.csv
+│   └── master_analysis_data_for_tableau (1).csv
 └── scripts/
     ├── bellabeat_r_analysis.R      ← Full R workflow (cleaning → export)
     └── bellabeat_queries.sql       ← Full SQL workflow (cleaning → export)
