@@ -37,8 +37,7 @@ Analyse competitor device trends to guide Bellabeat's marketing and product deve
 bellabeat-case-study/
 │
 ├── README.md
-├── Bellabeat_Case_Study.pdf        ← Full written analysis
-│
+├── Bellabeat_Case_Study_v.2.pdf    ← Full written analysis
 └── scripts/
     ├── bellabeat_r_analysis.R      ← Full R workflow (cleaning → export)
     └── bellabeat_queries.sql       ← Full SQL workflow (cleaning → export)
