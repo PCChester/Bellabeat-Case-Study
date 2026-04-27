@@ -107,4 +107,4 @@ All visualisations are published on [Tableau Public](https://public.tableau.com/
 
 This is my capstone project for the **Google Data Analytics Certificate**. It was my first end-to-end data analysis project, taking raw Kaggle data through cleaning, SQL aggregation, R feature engineering, and Tableau visualisation — all in service of a real business recommendation.
 
-Feedback welcome — feel free to open an issue or connect on [LinkedIn](#).
+Feedback welcome — feel free to open an issue or connect on [LinkedIn]([LinkedIn](https://www.linkedin.com/in/peter-christopher-chester-8b262353/).
