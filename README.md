@@ -4,6 +4,19 @@
 
 ---
 
+> ## Correction notice (November 2026): this analysis is being revised
+>
+> While reviewing this project with an AI-assisted code review, I found a bug in the R script. `as.integer()` turned 26 of the 33 Fitbit user IDs into missing values, because the IDs are larger than R's 32-bit integer limit. The joins then matched those missing IDs to each other and mixed different users' data: 940 daily records became 9,911 rows.
+>
+> I've fixed the script (`scripts/bellabeat_r_analysis.R`, v2) and rerun the analysis on the original Kaggle files. The corrected results change two key findings:
+>
+> - **The "Compensation Discovery" does not hold.** Pooled across all users, next-day steps are higher after poor-recovery nights (about 9,300 vs. 8,100). But one very active user accounts for 28 of the 81 poor nights. Comparing each user with themselves, the typical user took about 500 *fewer* steps after a poor night, and 9 of the 14 users with both kinds of nights walked less.
+> - **The High Physiological Strain segment is too small to use:** 5 days from 3 users.
+>
+> The findings, visualizations, data files and recommendations below are the original (v1) version, kept for transparency. A full v2 write-up and corrected visualizations are in progress.
+
+---
+
 ## Overview
 
 This case study explores how Bellabeat — a wellness technology company focused on women's health — can use smart device usage data to inform its marketing and product strategy.
@@ -72,10 +85,10 @@ bellabeat-case-study/
 ### 1. Competitive Gap Identified
 A feature comparison of Bellabeat, Fitbit, and Garmin revealed two significant gaps: **Stress/Recovery Analysis** and **GPS**. The rest of the analysis focuses on validating Stress/Recovery as the higher-priority recommendation.
 
-### 2. The Compensation Discovery
+### 2. The Compensation Discovery *(withdrawn in v2, see correction notice)*
 The data contradicted the expected hypothesis. Users logged **~500–1,000 more steps** the day after poor sleep — not fewer. This indicates widespread **compensatory over-exertion**: users are ignoring physiological signals for rest.
 
-### 3. High Physiological Strain Segment Validated
+### 3. High Physiological Strain Segment Validated *(withdrawn in v2, see correction notice)*
 A measurable high-risk user segment was identified — users simultaneously experiencing elevated resting heart rate **and** poor sleep recovery — who continued to maintain high activity levels. This group is the clearest target for intervention.
 
 ### 4. Feature Pivot
