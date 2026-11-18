@@ -1,10 +1,10 @@
 # ============================================================
-# Bellabeat Case Study - R/tidyverse Analysis Script (v2, corrected)
+# Bellabeat Case Study - R/tidyverse Analysis Script (v3, corrected)
 # Google Data Analytics Certificate Capstone
 # Author: Peter Christopher Chester | November 2025, corrected November 2026
 #
-# What changed in v2:
-#   - Fitbit Ids are kept as text. v1 converted them with as.integer(),
+# What changed in v3:
+#   - Fitbit Ids are kept as text. v.2 converted them with as.integer(),
 #     which turned 26 of the 33 Ids into NA (they are larger than R's
 #     32-bit integer limit of 2,147,483,647). The joins then matched NA to
 #     NA and multiplied rows (940 -> 9,911), mixing different users' data.
@@ -131,7 +131,7 @@ master_data <- master_data %>%
 sleep_days <- master_data %>%
   filter(!is.na(TotalMinutesAsleep), !is.na(Next_Day_Steps))
 
-# 8a. Pooled comparison (the v1 view): all users mixed together
+# 8a. Pooled comparison (the v.2 view): all users mixed together
 pooled <- sleep_days %>%
   group_by(Poor_Recovery) %>%
   summarise(days = n(), users = n_distinct(Id),
